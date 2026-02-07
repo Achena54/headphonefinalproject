@@ -18,71 +18,564 @@
 </head>
 
 <body>
-  <header >
-    <div class="container mx-auto  border rounded-[15px]">
-      <nav class="flex ">
+  <header>
+    <!-- --------------------- navbar --------------------- -->
+    <div class="container mx-auto  rounded-[15px] absolute top-3 z-50 left-25 bg-[#FFFFFF]">
+      <nav class="flex">
         <div class="navlogo">
-          soundexa <a href="#"><img src="./images/home/navlogo.png" alt="logo" class="inline-block items-center"></a>
+          <img src="./images/home/navlogo.jpg" alt="logo" class="inline-block items-center"></a>
         </div>
-        <div class="navitems mx-auto mt-1.5">
+        <div class="navitems mx-auto mt-3 md:block items-start ">
           <ul class="flex justify-center items-center ">
-            <li><a href="#" class="ml-7.5 ">Home</a></li>
-            <li><a href="./products.html" class="ml-7.5">products</a></li>
-            <li><a href="./about.html" class="ml-7.5">about us</a></li>
+            <li><a href="#" class="ml-7.5 font-semibold text-[20px]">Home</a></li>
+            <li><a href="./products.html" class="ml-7.5 text-[#424242] font-semibold text-[20px]">products</a></li>
+            <li><a href="./about.html" class="ml-7.5 text-[#424242] font-semibold text-[20px]">about us</a></li>
           </ul>
         </div>
-        <div class="navicon mt-1.5 md:block">
-          <ul class="flex justify-center items-center ">
-            <li><a href="#" class="ml-7.5">login</a></li>
-            <li><a href="#" class="ml-7.5"><i class="fa-solid fa-bag-shopping relative"></i></a><span class="absolute top-0">0</span></li>
-            <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots"></i></a></li>
+        <div class="navicon mt-3 md:ml-[0]">
+          <ul class="flex justify-center items-center md:flex-row flex-col ">
+            <li><a href="#" class="ml-7.5 text-[#424242] text-[20px] font-semibold">login</a></li>
+            <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
+                class="absolute top-0">0</span></li>
+            <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots "></i></a></li>
           </ul>
         </div>
+        <button class="hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </nav>
     </div>
-
-
   </header>
   <main>
-    <!-- <section class="h-screen">
-      <div id="controls-carousel" class="relative w-full h-screen" data-carousel="slide">
-      
-        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
-        
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <figure>
-              <img src="/images/home/bannerimg.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-screen" alt="...">
-            </figure>
-
-          </div>
-        
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-            <img src="./images/home/bannerimg2.jpg"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-screen" alt="...">
-          </div>
-         
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./images/home/blueheadphone.png"
-              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-screen" alt="...">
-          </div>
-
-        </div>
+    <!-- ----------------- banner ------------------------- -->
+    <section class="banner bg-[url(/images/home/bannerimg.jpg)] w-full h-screen relative">
+      <!-- <div id="default-carousel" class="relative w-full" data-carousel="slide"> -->
+      <!-- Carousel wrapper -->
+      <!-- <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+          <!-- Item 1 -->
+      <!-- <section class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-1.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </section> -->
+      <!-- Item 2 -->
+      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-2.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div> -->
+      <!-- Item 3 -->
+      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-3.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div> -->
+      <!-- Item 4 -->
+      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-4.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div> -->
+      <!-- Item 5 -->
+      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="/docs/images/carousel/carousel-5.svg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div> -->
+      <!-- </div> -->
+      <!-- Slider indicators -->
+      <!-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"> -->
+      <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
+        data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
+        data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
+        data-carousel-slide-to="4"></button>
+      <!-- </div> -->
+      <!-- Slider controls -->
+      <!-- <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m15 19-7-7 7-7" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button> -->
+      <!-- <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m9 5 7 7-7 7" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button> -->
+      <!-- </div> -->
+      <div class="container pt-[170px] ">
+        <h1 class="text-4xl font-bold text-gray-800 leading-15">
+          Feel the <span class="text-purple-600">Beat.</span><br />
+          Live the <span class="text-purple-600">Sound.</span>
+        </h1>
+        <p class="mt-4 text-gray-600 w-[521px] h-[72px]">
+          Lorem iusdbco osidvo soidvosn osdivoisd oisjdovs osdjvo Lorem iusdbco osidvo soidvosn osdivoisd oisjdovs
+          osdjvo Lorem iusdbco osidvo soidvosn osdivoisd oisjdovs osdjvo
+        </p>
+        <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
+          Shop Now
+        </button>
 
       </div>
 
-    </section> -->
-    <section class="banner bg-[url(/images/home/bannerimg.jpg)] w-full h-screen relative">
-      <h1 class="pt-[236px]">fell the beat <br>
-        live the sound
-      </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, voluptate itaque natus a id enim quae
-        repudiandae dolore molestiae facere vel!</p>
+    </section>
+    <!-- -------------------- latest --------------------------- -->
+    <section class="latest pt-[108px] pb-[108px]">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-[#424242] md:text-[]">Latest Headphones</h2>
+        <p class="text-[#000000] mt-2">
+          Explore the Sound & Quality with the headphones new to the market
+        </p>
+      </div>
+    </section>
+    <!-- --------------------- experience  ------------------------- -->
+    <section class="experience pt-[108px] pb-[108px]">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold text-[#424242] md:text-[]">Make music listening to a magical experience</h2>
+        <p class="text-[#000000] mt-2">
+          Explore the Sound & Quality with the headphones new to the market
+        </p>
+        <figure class="pt-[76px]">
+          <img src="./images/home/line.png" alt="lineimg">
+        </figure>
+        <div>
+          <div class="grid grid-cols-4 py-5">
+            <!-- <div class="card w-[221px] h-[221px]">
+              <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+                <div>
+                  <a href="#" class="relative">
+                    <img class="rounded-base  mx-auto" src="./images/home/expicon1.png" alt="icon1" />
+                  </a>
+                  
+                </div>
+                <div class="pt-4">
+                  <h5>Special offers</h5>
+                  <p class="mb-6 text-body">Curabitur malesuada</p>
+                </div>
+
+
+              </div>
+            </div> -->
+            <!-- <div class="card">
+              <div class="card w-[221px] h-[221px] rounded-full">
+                <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+                  <div>
+                    <a href="#" class="relative">
+                      <img class="rounded-base  mx-auto" src="./images/home/wirelessicon.png" alt="icon1" />
+                    </a>
+              </div>
+                  <div class="pt-4">
+                    <h5>Special offers</h5>
+                    <p class="mb-6 text-body">Curabitur malesuada</p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="card">
+              <div class="card w-[221px] h-[221px] rounded-full">
+                <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+                  <div>
+                    <a href="#" class="relative">
+                      <img class="rounded-base  mx-auto" src="./images/home/expicon1.png" alt="icon1" />
+                    </a>
+                    <span class="absolute  z-40">
+                      <img src="./images/home/discounticon.png" alt="discounticon">
+                    </span>
+                  </div>
+                  <div class="pt-4">
+                    <h5>Special offers</h5>
+                    <p class="mb-6 text-body">Curabitur malesuada</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="card">
+              <div class="card w-[221px] h-[221px] rounded-full">
+                <div class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs">
+                  <div>
+                    <a href="#" class="relative">
+                      <img class="rounded-base  mx-auto" src="./images/home/expicon1.png" alt="icon1" />
+                    </a>
+                    <span class="absolute  z-40">
+                      <img src="./images/home/discounticon.png" alt="discounticon">
+                    </span>
+                  </div>
+                  <div class="pt-4">
+                    <h5>Special offers</h5>
+                    <p class="mb-6 text-body">Curabitur malesuada</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="card border rounded-[40px] w-[222px] h-[222px]">
+              <div class="pt-4">
+                <div class="card_img flex justify-center items-center">
+                  <figure>
+                    <img src="./images/home/expicon1.png" alt="expicon" class="w-[108px] h-[99px]">
+                  </figure>
+                </div>
+                <div class="card_text text-center">
+                  <h5 class="text-[#424242] font-semibold text-[20px]">Special offers</h5>
+                  <p class="mb-6 text-body text-[#2A2A2A]">Curabitur malesuada</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="card border rounded-[40px] w-[222px] h-[222px]">
+              <div class="pt-4">
+                <div class="card_img flex justify-center items-center">
+                  <figure class="pt-3">
+                    <img src="./images/home/wirelessicon.png" alt="expicon">
+                  </figure>
+                </div>
+                <div class="card_text pt-4 text-center">
+                  <h5 class="text-[#424242] font-semibold text-[20px]">Wireless</h5>
+                  <p class="mb-6 text-body text-[#2A2A2A]">Curabitur malesuada</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card border rounded-[40px] w-[222px] h-[222px]">
+              <div class="pt-4">
+                <div class="card_img flex justify-center items-center">
+                  <figure class="pt-3">
+                    <img src="./images/home/noiseicon.png" alt="expicon">
+                  </figure>
+                </div>
+                <div class="card_text pt-4 text-center">
+                  <h5 class="text-[#424242] font-semibold text-[20px]">Noise Cancel</h5>
+                  <p class="mb-6 text-body text-[#2A2A2A]">Curabitur malesuada</p>
+                </div>
+              </div>
+            </div>
+            <div class="card border rounded-[40px] w-[222px] h-[222px]">
+              <div class="pt-4">
+                <div class="card_img flex justify-center items-center">
+                  <figure class="pt-3">
+                    <img src="./images/home/soundicon.png" alt="expicon">
+                  </figure>
+                </div>
+                <div class="card_text pt-4 text-center">
+                  <h5 class="text-[#424242] font-semibold text-[20px]">Extra bass</h5>
+                  <p class="mb-6 text-body text-[#2A2A2A]">Curabitur malesuada</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------- animation ----------------------- -->
+    <section class="animation relative pt-[108px] pb-[108px] h-[420px]">
+      <!-- ----------------- slider 1---------------- -->
+      <div class="absolute inset-0 bg-[#fff1e9] opacity-0 z-[1] animate-[var(--animate-bg)]">
+        <div class="container mx-auto h-full grid grid-cols-2 items-center">
+          <div class="animate-[var(--animate-text)]">
+
+            <h3 class="text-[38px] font-semibold font-poppins">
+              Make music listening to a <br>magical experience
+            </h3>
+            <p class="mt-4  text-black text-[16px] font-normal font-inter">
+              Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed enim placerat
+              vitae interdum.
+            </p>
+            <ul class="list-disc pt-4">
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+            </ul>
+            <button class="mt-6 px-6 py-3 bg-purple-600 text-white rounded-full">
+              Shop Now
+            </button>
+          </div>
+          <img src="./images/home/blueheadphone.png" class="w-[320px] mx-auto animate-[var(--animate-image)]" />
+        </div>
+
+      </div>
+      <!-- ------------------ slider-2 -------------------- -->
+      <div class="absolute inset-0 bg-[#e9f8f4] opacity-0 z-[1] animate-[var(--animate-bg)][animation-delay:4s]">
+        <div class="container mx-auto h-full grid grid-cols-2 items-center">
+
+          <div class="animate-[var(--animate-text)]">
+            <h1 class="text-[38px] font-semibold font-poppins">Turn listening music into a <br>magical journey
+            </h1>
+            <p class="mt-4  text-black text-[16px] font-normal font-inter">
+              Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed enim placerat
+              vitae interdum.
+            </p>
+            <ul class="list-disc pt-4">
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+            </ul>
+            <button class="mt-6 px-6 py-3 bg-purple-600 text-white rounded-[12px]">
+              Shop Now
+            </button>
+          </div>
+          <img src="./images/home/orangeheadphone.png" class="w-[320px] mx-auto animate-image [animation-delay:4s]" />
+        </div>
+      </div>
+      <!-- ------------------------- slider-3 ---------------------- -->
+      <div class="absolute inset-0 bg-[#f1efff] opacity-0 z-[1] animate-[var(--animate-bg)] [animation-delay:8s]">
+        <div class="container mx-auto h-full grid grid-cols-2 items-center">
+
+          <div class="animate-[var(--animate-text)]">
+            <h1 class="text-[38px] font-semibold font-poppins">Let music listening become a wondorous adventure</h1>
+            <p class="mt-4  text-black text-[16px] font-normal font-inter">
+              Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed enim placerat
+              vitae interdum.
+            </p>
+            <ul class="list-disc pt-4">
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+            </ul>
+            <button class="mt-6 px-6 py-3 bg-purple-600 text-white rounded-full">
+              Shop Now
+            </button>
+          </div>
+          <img src="./images/home/blueheadphone.png" class="w-[320px] mx-auto animate-image [animation-delay:8s]" />
+        </div>
+      </div>
+      <!-- ------------------------- slider4 --------------------------- -->
+      <div class="absolute inset-0 bg-[#f1efff] opacity-0 z-[1] animate-[var(--animate-bg)] [animation-delay:12s]">
+        <div class="container mx-auto h-full grid grid-cols-2 items-center">
+
+          <div class="animate-[var(--animate-text)]">
+            <h1 class="text-[38px] font-semibold font-poppins">Create a magical world through music listening</h1>
+            <p class="mt-4 text-black text-[16px] font-normal font-inter">
+              Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed enim placerat
+              vitae interdum.
+            </p>
+            <ul class="list-disc pt-4">
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li> Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+            </ul>
+            <button class="mt-6 px-6 py-3 bg-purple-600 text-white rounded-full">
+              Shop Now
+            </button>
+          </div>
+          <div>
+            <img src="./images/home/orangeheadphone.png"
+              class="w-[320px] mx-auto animate-image [animation-delay:12s]" />
+            <div class="flex gap-3 justify-center mt-6">
+              <span class="w-[80px] h-[80px] rounded-[50%] bg-indigo-400 animate-pulse [animation-delay:2s]"></span>
+              <span class="w-[80px] h-[80px] rounded-[50%] bg-orange-400 animate-pulse [animation-delay:4s]"></span>
+              <span class="w-[80px] h-[80px] rounded-[50%] bg-indigo-400 animate-pulse [animation-delay:8s]"></span>
+              <span class="w-[80px] h-[80px] rounded-[50%] bg-orange-400 animate-pulse [animation-delay:12s]"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- loud and clear ------------------ -->
+    <section class="loud pt-[108px] pb-[108px]">
+      <div class="container">
+        <div class="grid grid-cols-2">
+          <div class="text">
+            <h3>Loud & Clear Music brings dreams to life.</h3>
+            <p>Curabitur malesuada elit sed enim placerat vitae interdum Curabitur malesuada elit sed enim placerat
+              vitae interdum. Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed
+              enim placerat vitae interdum.</p>
+            <button>
+              <a href="#">Learn More</a>
+            </button>
+          </div>
+
+          <div class="img">
+            <figure>
+              <img src="./images/home/womenimg.png" alt="womenimg">
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- magic section ----------------- -->
+    <section class="magic  pt-[108px] pb-[108px]">
+      <div class="container grid grid-cols-2">
+        <div class="img">
+          <figure>
+            <img src="./images/home/manimg.png" alt="man img">
+          </figure>
+        </div>
+        <div class="text">
+          <h3>Clear Music transports you to magic.</h3>
+          <p>Curabitur malesuada elit sed enim placerat vitae interdum Curabitur malesuada elit sed enim placerat vitae
+            interdum. Curabitur malesuada elit sed enim placerat vitae interdum. Curabitur malesuada elit sed enim
+            placerat vitae interdum.</p>
+          <button>
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <!-- ------------------- generation ------------------- -->
+    <section class="generation pt-[108px] pb-[108px]">
+      <div class="container grid grid-cols-2">
+        <div class="img">
+          <figure class="relative left-0 w-[877px] h-[849px]">
+            <img src="./images/home/orangeheadphone.png" alt="headphoneimg">
+          </figure>
+          <span class="absolute top-[3500px] left-80 z-20 w-[470px] h-[626px]">
+            <figure>
+              <img src="./images/home/womenimg2.png" alt="womanimg">
+            </figure>
+          </span>
+        </div>
+        <div class="text pt-[299px] pl-[300px]">
+          <h3 class="font-poppins font-semibold text-[38px] w-[317px] h-[171px] text-[#424242]">The best of this
+            generation hear the future</h3>
+          <p class="w-[317px] h-[38px] text-[#000000] text-[16px]">Curabitur malesuada elit sed enim placerat vitae
+            interdum.</p>
+          <button class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------- customer review ---------------- -->
+    <section class="review pt-[108px] pb-[108px]">
+      <div class="container grid grid-cols-2">
+        <div class="text">
+          <h3 class="font-semibold text-[38px] text-[#424242]">Our Customers Review</h3>
+          <p class="text-[16px] font-normal text-[#000000] pt-[10px]">Metus aliquam eleifend mi in nulla posuere
+            sollicitudin aliquam fames ac </p>
+          <div class="grid grid-cols-2 pt-[72px]">
+            <figure class="img">
+              <img src="./images/home/customerimg1.png" alt="">
+            </figure>
+            <div class="text">
+              <h4>juhi</h4>
+              <p>CEO</p>
+              <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam fames ac turpis egestas</p>
+              <ul class="flex">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="img">
+          <figure>
+            <img src="./images/home/womenimg3.png" alt="">
+          </figure>
+        </div>
+      </div>
     </section>
 
+    <!-- ---------------------- details section--------------- -->
+    <section class="details pt-[108px] pb-[108px]">
+      <div class="container">
+        <div class="grid grid-cols-4">
+          <div class="first_card">
+            <figure class="flex justify-center">
+              <img src="./images/home/icon1.png" alt="icon">
+            </figure>
+            <h4 class="font-poppins font-semibold text-[20px] text-center">Our Customers Review</h4>
+            <p class="text-center">Free shipping on all orders</p>
+          </div>
+          <div class="first_card">
+            <figure class="flex justify-center">
+              <img src="./images/home/icon1.png" alt="icon">
+            </figure>
+            <h4 class="font-poppins font-semibold text-[20px] text-center">Our Customers Review</h4>
+            <p class="text-center">Free shipping on all orders</p>
+          </div>
+          <div class="first_card">
+            <figure class="flex justify-center">
+              <img src="./images/home/icon1.png" alt="icon">
+            </figure>
+            <h4 class="font-poppins font-semibold text-[20px] text-center">Our Customers Review</h4>
+            <p class="text-center">Free shipping on all orders</p>
+          </div>
+          <div class="first_card">
+            <figure class="flex justify-center">
+              <img src="./images/home/icon1.png" alt="icon">
+            </figure>
+            <h4 class="font-poppins font-semibold text-[20px] text-center">Our Customers Review</h4>
+            <p class="text-center">Free shipping on all orders</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <section class="footer pt-[108px] pb-[108px] bg-[#424242] text-white">
+      <div class="container grid grid-cols-4 mb-[20px]">
+        <div>
+          <ul>
+            <li  class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA 30008</li>
+            <li  class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
+            <li  class="pb-[24px]"><i class="fa-solid fa-envelope"></i> <a href="#">support@example.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="pb-[24px]">information</p>
+          <ul>
+            <li  class="pb-[24px]"><a href="#">About us</a></li>
+            <li class="pb-[24px]"><a href="#">contact us</a></li>
+            <li class="pb-[24px]"><a href="#">Help & FAQ's</a></li>
+            <li class="pb-[24px]"><a href="#">Working Hours</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="pb-[24px]">support</p>
+          <ul>
+            <li class="pb-[24px]"><a href="#">Order Return</a></li>
+            <li class="pb-[24px]"><a href="#">Privacy Policy</a></li>
+            <li class="pb-[24px]"><a href="#">Shipping Details</a></li>
+            <li class="pb-[24px]"><a href="#">Online Payment</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="capitalize pb-[24px]">sign up and save</p>
+          <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
+            <form class="bg-[white] relative">
+              <input type="mail" id="mail" class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
+                placeholder="Email address">
+            </form>
+            <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
+              Sign up
+            </button>
+          </div>
+          <p class="text-xs text-gray-300 mt-3 leading-relaxed">
+            Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+          </p>
+        </div>
+      </div>
+      <div class="border-t-[1px] border-t-white">
+          <p class="text-center pt-[70px]">2025 designed <a href="#">soundex</a></p>
+      </div>
+    </section>
+  </footer>
   <!-- -------------- tailwind carousal link-------------- -->
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
