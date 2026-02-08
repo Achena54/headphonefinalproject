@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <!-- ------------------- font awesome cdn ------------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+    <!-- ------------------ css link ----------------- -->
+    <link rel="stylesheet" href="./output/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container mx-auto  rounded-[15px]  left-25 bg-[#faeded]">
+            <nav class="flex ">
+                <div class="navlogo">
+                    <img src="./images/home/navlogo.jpg" alt="logo" class="inline-block items-center"></a>
+                </div>
+                <div class="navitems mx-auto mt-3 md:block items-start ">
+                    <ul class="flex justify-center items-center ">
+                        <li><a href="./index.html"
+                                class="ml-7.5 font-semibold text-[20px] text-[#424242] capitalize">Home</a></li>
+                        <li><a href="./products.html" class="ml-7.5  font-semibold text-[20px]  capitalize">products</a>
+                        </li>
+                        <li><a href="./about.html"
+                                class="ml-7.5 text-[#424242] font-semibold text-[20px] capitalize">about us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navicon mt-3 md:ml-[0]">
+                    <ul class="flex justify-center items-center md:flex-row flex-col ">
+                        <li><a href="./login.html" class="ml-7.5 text-[#9179FE] text-[20px] font-semibold">login</a>
+                        </li>
+                        <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
+                                class="absolute top-0">0</span></li>
+                        <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots "></i></a></li>
+                    </ul>
+                </div>
+                <button class="hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- ------------------------- banner --------------------------- -->
+        <section class="banner bg-[url(/images/login/loginbanner.png)] w-full h-screen bg-center bg-no-repeat">
+            <div class="container text-center">
+                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">login</h1>
+                </h1>
+                <div class="text-white font-normal text-[20px] capitalize font-poppins">
+                    <span>home</span>/<span>login</span>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------- form --------------------- -->
+        <section class="form py-[108px]">
+            <div class="container grid grid-cols-2">
+                <div class="left_part">
+                    <figure>
+                        <img src="./images/login/loginphoto.png" alt="man img">
+                    </figure>
+                </div>
+                <div class="right_part">
+                    <h4 class="ml-5 mb-5 font-poppins font-medium text-[28px] capitalize">login</h4>
+
+                    <form action="./loginsucces.html"  id="rform" class="max-w-sm ml-5">
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2.5 text-sm font-medium text-heading capitalize">email</label>
+                            <input type="email" id="mailuser"
+                                class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                                placeholder="name@mail.com" required />
+                                <p id="mailcheck" class="error"></p>
+                        </div>
+                        <div class="mb-5">
+                            <label for="passowrd" class="block mb-2.5 text-sm font-medium text-heading capitalize">
+                                password</label>
+                            <input type="pwd" id="pwduser"
+                                class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                                placeholder="••••••••" required />
+                                <p id="pwdcheck" class="error"></p>
+                        </div>
+                        
+                      <button type="submit" class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[18px]">Log in</button>
+
+                    </form>
+                    <p class="ml-[200px] my-3">or</p>
+                    <p class="ml-[100px] my-3">don't have an accout? <a href="./membership.html">membership</a></p>
+                    <p class="ml-[50px] border-b-2">By signing up, you agree to our Terms Of Use and Privacy Policy</p>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+   <footer>
+        <section class="footer pt-[108px] pb-[108px] bg-[#424242] text-white">
+            <div class="container grid grid-cols-4 mb-[20px]">
+                <div>
+                    <ul>
+                        <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA
+                            30008</li>
+                        <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
+                        <li class="pb-[24px]"><i class="fa-solid fa-envelope"></i> <a href="#">support@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-[24px] capitalize">information</p>
+                    <ul>
+                        <li class="pb-[24px]"><a href="#">About us</a></li>
+                        <li class="pb-[24px]"><a href="#">contact us</a></li>
+                        <li class="pb-[24px]"><a href="#">Help & FAQ's</a></li>
+                        <li class="pb-[24px]"><a href="#">Working Hours</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="pb-[24px] capitalize">support</p>
+                    <ul>
+                        <li class="pb-[24px]"><a href="#">Order Return</a></li>
+                        <li class="pb-[24px]"><a href="#">Privacy Policy</a></li>
+                        <li class="pb-[24px]"><a href="#">Shipping Details</a></li>
+                        <li class="pb-[24px]"><a href="#">Online Payment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="capitalize pb-[24px]">sign up and save</p>
+                    <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
+                        <form class="bg-[white] relative">
+                            <input type="mail" id="mail"
+                                class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
+                                placeholder="Email address">
+                        </form>
+                        <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
+                            Sign up
+                        </button>
+                    </div>
+                    <p class="text-xs text-gray-300 mt-3 leading-relaxed">
+                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t-[1px] border-t-white">
+                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#">soundex</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
