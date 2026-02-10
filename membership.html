@@ -17,132 +17,260 @@
 
 <body>
     <header>
-        <div class="container mx-auto  rounded-[15px]  left-25 bg-[#faeded]">
-            <nav class="flex ">
-                <div class="navlogo">
-                    <img src="./images/home/navlogo.jpg" alt="logo" class="inline-block items-center"></a>
-                </div>
-                <div class="navitems mx-auto mt-3 md:block items-start ">
-                    <ul class="flex justify-center items-center ">
-                        <li><a href="./index.html"
-                                class="ml-7.5 font-semibold text-[20px] text-[#424242] capitalize">Home</a></li>
-                        <li><a href="./products.html" class="ml-7.5  font-semibold text-[20px]  capitalize">products</a>
-                        </li>
-                        <li><a href="./about.html"
-                                class="ml-7.5 text-[#424242] font-semibold text-[20px] capitalize">about us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navicon mt-3 md:ml-[0]">
-                    <ul class="flex justify-center items-center md:flex-row flex-col ">
-                        <li><a href="./login.html" class="ml-7.5  text-[20px] font-semibold">login</a>
-                        </li>
-                        <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
-                                class="absolute top-0">0</span></li>
-                        <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots "></i></a></li>
-                    </ul>
-                </div>
-                <button class="hidden">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+        <header class="bg-white shadow-md relative z-50">
+            <div class="container mx-auto px-4">
+                <nav class="flex items-center justify-between py-4">
+
+                    <!-- Logo -->
+                    <div>
+                        <a href="./index.html">
+                            <img src="./images/home/navlogo.jpg" alt="logo" class="h-10 w-auto">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:block">
+                        <ul class="flex items-center space-x-8">
+                            <li>
+                                <a href="./index.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./products.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Desktop Right Icons -->
+                    <div class="hidden md:block">
+                        <ul class="flex items-center space-x-6">
+
+                            <li>
+                                <a href="./login.html"
+                                    class="text-purple-600 text-lg font-semibold hover:text-purple-800 transition">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="relative">
+                                    <a href="#">
+                                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                                    </a>
+                                    <span class="absolute -top-2 -right-3 bg-purple-600 
+                text-white text-xs px-1.5 rounded-full">
+                                        0
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-dots text-lg"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Toggle Button -->
+                    <button id="menuBtn" class="md:hidden text-2xl text-gray-700">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md w-full">
+
+                <ul class="flex flex-col items-center py-6 space-y-5">
+
+                    <li>
+                        <a href="./index.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./products.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./login.html"
+                            class="text-purple-600 text-lg font-semibold hover:text-purple-800 transition">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
     </header>
     <main>
         <!-- --------------------- banner ---------------------------->
-        <section class="banner bg-[url(/images/login/loginbanner.png)] w-full h-screen bg-center bg-no-repeat">
-            <div class="container text-center">
-                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">membership</h1>
+        <section class="banner bg-[url('/images/products/productbanner.png')] 
+         bg-center bg-no-repeat 
+         min-h-[60vh] md:min-h-[70vh] lg:min-h-screen 
+         flex items-center justify-center">
+
+            <div class="text-center px-4">
+
+                <h1 class="text-white capitalize font-poppins 
+                   text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
+                   font-semibold">
+                    membership
                 </h1>
-                <div class="text-white font-normal text-[20px] capitalize font-poppins">
-                    <span>home</span>/<span>login</span>/<span>sign up</span>
+
+                <div class="text-white font-normal 
+                    text-sm sm:text-base md:text-lg 
+                    capitalize font-poppins mt-4">
+                    <span class="hover:text-purple-300 cursor-pointer">home</span> /
+                    <span class="hover:text-purple-300 cursor-pointer">login</span> /
+                    <span class="hover:text-purple-300 cursor-pointer">sign up</span>
                 </div>
+
             </div>
         </section>
+
         <!-- ----------------------- form ------------------------------ -->
-        <section class="form py-[108px]">
-            <div class="container grid grid-cols-2">
+        <section class="form py-[60px] md:py-[80px] lg:py-[108px]">
+            <div class="container grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+                <!-- Left Part -->
                 <div class="left_part">
-                    <figure>
-                        <img src="./images/login/loginphoto.png" alt="man img">
+                    <figure class="overflow-hidden object-cover transition duration-500 ease-in-out hover:scale-110">
+                        <img src="./images/login/loginphoto.png" alt="man img" class="w-full h-auto mx-auto">
                     </figure>
                 </div>
-                <div class="right_part">
-                    <h4 class="ml-5 mb-5 font-poppins font-medium text-[28px] capitalize">membership</h4>
 
-                    <form action="./loginsucces.html" id="rform" class=" ml-5">
+                <!-- Right Part -->
+                <div class="right_part pl-0 md:pl-[20px] px-4 md:px-0">
+
+                    <h4
+                        class="ml-0 md:ml-5 mb-5 font-poppins font-medium text-[22px] md:text-[26px] lg:text-[28px] capitalize text-center md:text-left">
+                        membership
+                    </h4>
+
+                    <form action="./loginsucces.html" id="rform" class="ml-0 md:ml-5">
+
                         <div class="mb-5">
-                            <label for="name" class="block mb-2.5 text-sm font-medium text-heading capitalize">your
-                                name <span class="text-red-700">*</span></label>
+                            <label for="name" class="block mb-2.5 text-sm font-medium text-heading capitalize">
+                                your name <span class="text-red-700">*</span>
+                            </label>
+
                             <input type="name" id="usename"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
                                 placeholder="name@mail.com" />
+
                             <p id="usercheck" class="error"></p>
                         </div>
+
                         <div class="mb-5">
-                            <label for="email"
-                                class="block mb-2.5 text-sm font-medium text-heading capitalize">email <span class="text-red-700">*</span></label>
+                            <label for="email" class="block mb-2.5 text-sm font-medium text-heading capitalize">
+                                email <span class="text-red-700">*</span>
+                            </label>
+
                             <input type="email" id="mailuser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
                                 placeholder="name@mail.com" />
+
                             <p id="mailcheck" class="error"></p>
                         </div>
-                        <div class="mb-5">
 
+                        <div class="mb-5">
                             <label for="passowrd" class="block mb-2.5 text-sm font-medium text-heading capitalize">
-                                password <span class="text-red-700">*</span></label>
+                                password <span class="text-red-700">*</span>
+                            </label>
+
                             <input type="pwd" id="pwduser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
                                 placeholder="••••••••" />
+
                             <p id="pwdcheck" class="error"></p>
                         </div>
 
                         <button type="submit"
-                            class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[18px]">Log
-                            in</button>
+                            class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[16px] md:text-[18px] hover:bg-purple-400 transition">
+                            Log in
+                        </button>
 
                     </form>
+
                     <p class="text-center my-3">or</p>
-                    <p class="text-center my-3 capitalize">continue with google <span><i class="fa-brands fa-google"></i></span>
+
+                    <p class="text-center my-3 capitalize text-sm md:text-base">
+                        continue with google <span><i class="fa-brands fa-google"></i></span>
                     </p>
-                    <p class="text-center my-3 capitalize">continue with linkedin <span><i class="fa-brands fa-linkedin"></i></span></p>
-                    <p class="text-center my-3 capitalize">already have an account? <a href="./login.html" class="text-[#9179FE]">sign in here</a></p>
-                    <p class="text-center capitalize "> <u>By signing up, you agree to our Terms <br>Of Use and Privacy Policy</u>
+
+                    <p class="text-center my-3 capitalize text-sm md:text-base">
+                        continue with linkedin <span><i class="fa-brands fa-linkedin"></i></span>
+                    </p>
+
+                    <p class="text-center my-3 capitalize text-sm md:text-base">
+                        already have an account?
+                        <a href="./login.html" class="text-[#9179FE]">sign in here</a>
+                    </p>
+
+                    <p class="text-center capitalize text-xs md:text-sm px-4 md:px-0">
+                        <u>By signing up, you agree to our Terms <br>Of Use and Privacy Policy</u>
                     </p>
 
                 </div>
             </div>
-
         </section>
+
     </main>
     <footer>
         <section class="footer py-[108px] bg-[#424242] text-white">
-            <div class="container grid grid-cols-4 mb-[20px]">
+            <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-[20px]">
                 <div>
                     <ul>
                         <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA
                             30008</li>
                         <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-envelope"></i> <a href="#">support@example.com</a>
-                        </li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><i class="fa-solid fa-envelope"></i> <a
+                                href="#">support@example.com</a></li>
                     </ul>
                 </div>
                 <div>
                     <p class="pb-[24px] capitalize">information</p>
                     <ul>
-                        <li class="pb-[24px]"><a href="#">About us</a></li>
-                        <li class="pb-[24px]"><a href="#">contact us</a></li>
-                        <li class="pb-[24px]"><a href="#">Help & FAQ's</a></li>
-                        <li class="pb-[24px]"><a href="#">Working Hours</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">About us</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">contact us</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Help & FAQ's</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Working Hours</a></li>
                     </ul>
                 </div>
                 <div>
                     <p class="pb-[24px] capitalize">support</p>
                     <ul>
-                        <li class="pb-[24px]"><a href="#">Order Return</a></li>
-                        <li class="pb-[24px]"><a href="#">Privacy Policy</a></li>
-                        <li class="pb-[24px]"><a href="#">Shipping Details</a></li>
-                        <li class="pb-[24px]"><a href="#">Online Payment</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Order Return</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Privacy Policy</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Shipping Details</a></li>
+                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Online Payment</a></li>
                     </ul>
                 </div>
                 <div>
@@ -163,7 +291,8 @@
                 </div>
             </div>
             <div class="border-t-[1px] border-t-white">
-                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#">soundex</a></p>
+                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#"
+                        class="hover:text-orange-300 transition">soundex</a></p>
             </div>
         </section>
     </footer>

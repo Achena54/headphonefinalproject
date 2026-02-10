@@ -17,316 +17,542 @@
 </head>
 
 <body>
-    <!-- ----------------- nabnar ---------------------------- -->
+
     <header>
-        <div class="container mx-auto  rounded-[15px] absolute top-3 z-50 left-25 bg-[#FFFFFF]">
-            <nav class="flex">
-                <div class="navlogo">
-                    <img src="./images/home/navlogo.jpg" alt="logo" class="inline-block items-center"></a>
-                </div>
-                <div class="navitems mx-auto mt-3 md:block items-start ">
-                    <ul class="flex justify-center items-center ">
-                        <li><a href="./about.html" class="ml-7.5 font-semibold text-[20px]">Home</a></li>
-                        <li><a href="./products.html"
-                                class="ml-7.5 text-[#424242] font-semibold text-[20px] ">products</a></li>
-                        <li><a href="./about.html" class="ml-7.5 text-[#424242] font-semibold text-[20px]">about us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navicon mt-3 md:ml-[0]">
-                    <ul class="flex justify-center items-center md:flex-row flex-col ">
-                        <li><a href="./login.html" class="ml-7.5 text-[#424242] text-[20px] font-semibold">login</a>
-                        </li>
-                        <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
-                                class="absolute top-0">0</span></li>
-                        <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots "></i></a></li>
-                    </ul>
-                </div>
-                <button class="hidden">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </nav>
-        </div>
+        <!-- ------------------- navbar ------------------------- -->
+        <header class="bg-white shadow-md relative z-50">
+            <div class="container mx-auto px-4">
+                <nav class="flex items-center justify-between py-4">
+
+                    <!-- Logo -->
+                    <div>
+                        <a href="./index.html">
+                            <img src="./images/home/navlogo.jpg" alt="logo" class="h-10 w-auto">
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:block">
+                        <ul class="flex items-center space-x-8">
+                            <li>
+                                <a href="./index.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./products.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./about.html"
+                                    class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Desktop Right Icons -->
+                    <div class="hidden md:block">
+                        <ul class="flex items-center space-x-6">
+
+                            <li>
+                                <a href="./login.html"
+                                    class="text-purple-600 text-lg font-semibold hover:text-purple-800 transition">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="relative">
+                                    <a href="#">
+                                        <i class="fa-solid fa-bag-shopping text-lg"></i>
+                                    </a>
+                                    <span class="absolute -top-2 -right-3 bg-purple-600 
+                text-white text-xs px-1.5 rounded-full">
+                                        0
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-dots text-lg"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Toggle Button -->
+                    <button id="menuBtn" class="md:hidden text-2xl text-gray-700">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md w-full">
+
+                <ul class="flex flex-col items-center py-6 space-y-5">
+
+                    <li>
+                        <a href="./index.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./products.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./about.html"
+                            class="font-semibold text-lg text-gray-700 hover:text-purple-600 transition">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./login.html"
+                            class="text-purple-600 text-lg font-semibold hover:text-purple-800 transition">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
     </header>
     <main>
         <!-- ----------------------- banner ---------------------------- -->
-        <section
-            class="banner bg-[url(/images/wirelessheadset/wirelessheadsetbanner.png)] w-full h-screen bg-center bg-no-repeat">
-            <div class="container text-center">
-                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">wireless headset
+        <section class="relative w-full min-h-[60vh] md:min-h-screen 
+         bg-[url('/images/wirelessheadset/wirelessheadsetbanner.png')] 
+         bg-cover bg-center bg-no-repeat flex items-center justify-center">
+
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black/50"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 container mx-auto px-4 text-center">
+
+                <h1 class="text-white capitalize font-poppins font-semibold
+               text-3xl sm:text-4xl md:text-5xl lg:text-[64px]">
+                    Wireless Headset
                 </h1>
-                <div class="text-white font-normal text-[20px] capitalize font-poppins">
-                    <span>home</span>/<span>products</span>/<span>wireless headset</span>
+
+                <div class="mt-4 text-white font-normal capitalize font-poppins
+                text-sm sm:text-base md:text-lg lg:text-[20px]">
+                    <span>Home</span> /
+                    <span>Products</span> /
+                    <span class="text-purple-300">Wireless Headset</span>
                 </div>
+
             </div>
         </section>
+
         <!-- ------------------------ wireless headset -------------------- -->
-        <section class="wireless py-[97px]">
-            <div class="container grid grid-cols-2">
-                <div class="img">
-                    <figure class="w-[667px] h-[551px] ">
-                        <img src="./images/home/orangeheadphone.png" alt="headphone img">
-                    </figure>
-                    <div class="grid grid-cols-4 pt-[90px]">
-                        <figure class="hover:scale-50">
-                            <img src="./images/wirelessheadset/orangeheadphone1.png" alt="headphone img">
-                        </figure>
-                        <figure>
-                            <img src="./images/wirelessheadset/orangeheadphonepart2.png" alt="headphone img">
-                        </figure>
-                        <figure>
-                            <img src="./images/wirelessheadset/orangeheadphonepart3.png" alt="headphone img">
-                        </figure>
-                        <figure>
-                            <img src="./images/wirelessheadset/orangeheadphonepart4.png" alt="headphone img">
-                        </figure>
-                    </div>
-                </div>
-                <div class="text">
-                    <h4 class="font-poppins font-semibold text-[38px] capitalize text-[#424242]">wireless headset</h4>
-                    <p class="font-inter">5 sold in last 15 hours </p>
-                    <p class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Nam tempus turpis at
-                        metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia
-                        tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia
-                        tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia
-                        tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia
-                        tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque</p>
-                    <p class="font-inter font-semibold text-[20px] text-[#424242] capitalize ">price: <span
-                            class="font-inter font-semibold text-[20px] text-[#9179FE] capitalize pl-[90px]">rs.6000</span>
-                    </p>
-                    <p class="font-poppins">Please hurry , Only 8 in Stock</p>
-                    <ul class="flex">
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">type:</li>
-                        <li class="font-inter font-semibold text-[20px] text-[#9179FE] capitalize pl-[102px] pr-[15px]">
-                            Wireless</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">Wired</li>
-                    </ul>
-                    <ul class="flex">
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">weight:</li>
-                        <li class="font-inter font-semibold text-[20px] text-[#9179FE] capitalize pl-[83px] pr-[15px]">
-                            389g</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize pr-[15px]">250g</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize pr-[15px]">300g</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize pr-[15px]">310g</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">320g</li>
-                    </ul>
-                    <ul class="flex g-[15px]">
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">material:</li>
-                        <li class="pl-[75px] font-inter font-semibold text-[20px] text-[#9179FE] capitalize pr-[15px]">
-                            silicon</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize g-[15px] pr-[15px]">
-                            leather</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize pr-[15px]">fiber</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize pr-[15px]">plastic</li>
-                        <li class="font-inter font-normal text-[20px] text-[#424242] capitalize">hard plastic</li>
-                    </ul>
-                    <p class="font-inter font-normal text-[20px] text-[#424242] capitalize">brand: <span
-                            class="pl-[90px] font-inter font-semibold text-[20px] text-[#9179FE] capitalize">robot</span>
-                    </p>
-                    <p class="font-inter font-normal text-[20px] text-[#424242] capitalize">product type: <span
-                            class="pl-[27px] font-inter font-semibold text-[20px] text-[#9179FE] capitalize w-[188px] h-[48px]">bluetooth
-                            headphone</span></p>
-                    <p class="font-inter font-normal text-[20px] text-[#424242] capitalize">quantity: <button
-                            type="button"
-                            class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-1 focus:ring-neutral-tertiary font-medium leading-5 rounded-[10px] text-sm px-2 py-1 focus:outline-none pl-[68px]">-
-                        </button>
-                        <span>1</span>
-                        <button type="button"
-                            class="text-heading bg-transparent box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-1 focus:ring-neutral-tertiary font-medium leading-5 rounded-[10px] text-sm px-2 py-1 focus:outline-none">+
-                        </button>
-                    </p>
+       <section class="wireless py-12 md:py-20">
+  <div class="max-w-7xl mx-auto px-4">
 
-                    <button
-                        class="border-[#955AA4]  mb-5 border-2 py-2 px-3 w-[204px] rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize"><a
-                            href="#" clss="text-center">add to cart</a>
-                    </button>
-                    <button
-                        class="border-[#955AA4]  mb-5 ml-[50px]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-[424px]"><a
-                            href="#" clss="text-center">add to wishlist</a>
-                    </button>
+    <!-- GRID -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
 
+      <!-- LEFT SIDE (IMAGE) -->
+      <div>
+        <!-- Main Image -->
+        <figure class="w-full">
+          <img src="./images/home/orangeheadphone.png"
+               alt="headphone"
+               class="w-full h-auto rounded-lg">
+        </figure>
 
-                    <button type="button"
-                        class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-base text-sm py-2 px-3 w-[100%] text-center leading-5 capitalize">buy
-                        it now</button>
-                </div>
-            </div>
-        </section>
+        <!-- Thumbnail Images -->
+        <div class="grid grid-cols-4 gap-4 mt-6">
+          <img src="./images/wirelessheadset/orangeheadphone1.png"
+               class="w-full cursor-pointer hover:scale-95 transition duration-300 rounded-md">
+
+          <img src="./images/wirelessheadset/orangeheadphonepart2.png"
+               class="w-full cursor-pointer hover:scale-95 transition duration-300 rounded-md">
+
+          <img src="./images/wirelessheadset/orangeheadphonepart3.png"
+               class="w-full cursor-pointer hover:scale-95 transition duration-300 rounded-md">
+
+          <img src="./images/wirelessheadset/orangeheadphonepart4.png"
+               class="w-full cursor-pointer hover:scale-95 transition duration-300 rounded-md">
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE (TEXT) -->
+      <div class="space-y-5">
+
+        <h2 class="text-2xl md:text-4xl font-semibold text-gray-800 capitalize">
+          wireless headset
+        </h2>
+
+        <p class="text-gray-500">5 sold in last 15 hours</p>
+
+        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+          Nam tempus turpis at metus scelerisque placerat nulla deumantos
+          solicitud felis. Pellentesque dia tempus turpis at metus scelerisque
+          placerat nulla deumantos solicitud felis.
+        </p>
+
+        <!-- Price -->
+        <div class="flex items-center gap-4">
+          <span class="text-lg font-semibold text-gray-700">Price:</span>
+          <span class="text-xl font-semibold text-purple-600">Rs.6000</span>
+        </div>
+
+        <p class="text-red-500 font-medium">
+          Please hurry, Only 8 in Stock
+        </p>
+
+        <!-- Type -->
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="font-medium text-gray-700">Type:</span>
+          <button class="text-purple-600 font-semibold">Wireless</button>
+          <button class="text-gray-600">Wired</button>
+        </div>
+
+        <!-- Weight -->
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="font-medium text-gray-700">Weight:</span>
+          <button class="text-purple-600 font-semibold">389g</button>
+          <button>250g</button>
+          <button>300g</button>
+          <button>310g</button>
+          <button>320g</button>
+        </div>
+
+        <!-- Material -->
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="font-medium text-gray-700">Material:</span>
+          <button class="text-purple-600 font-semibold">Silicon</button>
+          <button>Leather</button>
+          <button>Fiber</button>
+          <button>Plastic</button>
+        </div>
+
+        <!-- Brand -->
+        <div class="flex gap-4">
+          <span class="font-medium text-gray-700">Brand:</span>
+          <span class="text-purple-600 font-semibold">Robot</span>
+        </div>
+
+        <!-- Product Type -->
+        <div class="flex gap-4">
+          <span class="font-medium text-gray-700">Product Type:</span>
+          <span class="text-purple-600 font-semibold">
+            Bluetooth Headphone
+          </span>
+        </div>
+
+        <!-- Quantity -->
+        <div class="flex items-center gap-4">
+          <span class="font-medium text-gray-700">Quantity:</span>
+
+          <div class="flex items-center border rounded-md">
+            <button class="px-3 py-1">-</button>
+            <span class="px-4">1</span>
+            <button class="px-3 py-1">+</button>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <button class="border-2 border-purple-600 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition">
+            Add to Cart
+          </button>
+
+          <button class="border-2 border-purple-600 py-2 rounded-lg hover:bg-purple-600 hover:text-white transition">
+            Add to Wishlist
+          </button>
+        </div>
+
+        <!-- Buy Now -->
+        <button class="w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white py-3 rounded-lg hover:opacity-90 transition">
+          Buy It Now
+        </button>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <!-- --------------------------- description ---------------- -->
-        <section class="description py-[97px]">
-            <div class="container">
-                <h3 class="font-poppins font-normal text-[32px] text-[#424242] capitalize">product description</h3>
-                <p class="pt-[37px] font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Nam tempus
-                    turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor,
-                    elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des
-                    commodo pharetras loremos.Donec pretium egestas sapien et mollis.</p>
+       <section class="description py-10 md:py-16 lg:py-24">
+    <div class="max-w-6xl mx-auto px-4">
 
-                <p class="pt-[37px] font-poppins font-semibold text-[20px] text-[#424242] capitalize">product
-                    description</p>
-                <ul class="list-disc pl-8">
-                    <li class="pt-[37px] font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Comodous
-                        in tempor ullamcorper miaculis</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Pellentesque vitae
-                        neque mollis urna mattis laoreet.</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Divamus sit amet
-                        purus justo</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Proin molestie
-                        egestas orci ac suscipit risus posuere loremous</li>
-                </ul>
-                <p class="pt-[37px] font-poppins font-semibold text-[20px] text-[#424242] capitalize">sample ordered
-                    list</p>
-                <ul class="list-decimal pl-8">
-                    <li class="pt-[37px] font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Comodous
-                        in tempor ullamcorper miaculis</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Pellentesque vitae
-                        neque mollis urna mattis laoreet.</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Divamus sit amet
-                        purus justo</li>
-                    <li class="font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000]">Proin molestie
-                        egestas orci ac suscipit risus posuere loremous</li>
-                </ul>
-                <p class="pt-[37px] font-poppins font-semibold text-[20px] text-[#424242] capitalize">sample paragraph
-                    test</p>
-                <p class="pt-[37px] font-inter font-normal text-[16px] text-16px/[158.3%] text-[#000000] ">“Praesent
-                    vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu convallis est. Cras felis nunc
-                    commodo eu convallis vitae interdum non nisl. Maecenas ac est sit amet augue pharetra convallis nec
-                    danos dui. Cras suscipit quam et turpis eleifend vitae malesuada magna congue. Damus id ullamcorper
-                    neque. Sed vitae mi a mi pretium aliquet ac sed elit. Pellentesque nulla eros accumsan quis justo at
-                    tincidunt lobortis denimes loremous. Suspendisse vestibulum lectus in lectus volutpat, ut dapibus
-                    purus pulvinar. Vestibulum sit amet auctor ipsum.”</p>
-            </div>
-            <div class="text-center">
-                <button
-                    class="border-[#955AA4]  mb-5 ml-[50px]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[38px] capitalize w-[424px]"><a
-                        href="#" clss="text-center">Have a queation? Ask an expert</a>
-                </button>
-            </div>
+        <h3 class="font-poppins font-normal text-2xl md:text-3xl lg:text-4xl text-[#424242] capitalize">
+            product description
+        </h3>
 
-        </section>
+        <p class="mt-6 font-inter text-base leading-relaxed text-black">
+            Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis.
+            Pellentesque diam dolor, elementum etos lobortis des mollis ut risus.
+            Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos.
+            Donec pretium egestas sapien et mollis.
+        </p>
+
+        <p class="mt-8 font-poppins font-semibold text-lg md:text-xl text-[#424242] capitalize ">
+            product description
+        </p>
+
+        <ul class="list-disc pl-6 mt-4 space-y-2 font-inter text-base leading-relaxed text-black">
+            <li>Comodous in tempor ullamcorper miaculis</li>
+            <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+            <li>Divamus sit amet purus justo</li>
+            <li>Proin molestie egestas orci ac suscipit risus posuere loremous</li>
+        </ul>
+
+        <p class="mt-8 font-poppins font-semibold text-lg md:text-xl text-[#424242] capitalize">
+            sample ordered list
+        </p>
+
+        <ul class="list-decimal pl-6 mt-4 space-y-2 font-inter text-base leading-relaxed text-black">
+            <li>Comodous in tempor ullamcorper miaculis</li>
+            <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+            <li>Divamus sit amet purus justo</li>
+            <li>Proin molestie egestas orci ac suscipit risus posuere loremous</li>
+        </ul>
+
+        <p class="mt-8 font-poppins font-semibold text-lg md:text-xl text-[#424242] capitalize">
+            sample paragraph test
+        </p>
+
+        <p class="mt-6 font-inter text-base leading-relaxed text-black">
+            “Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem,
+            eu convallis est. Cras felis nunc commodo eu convallis vitae interdum non nisl.
+            Maecenas ac est sit amet augue pharetra convallis nec danos dui.
+            Cras suscipit quam et turpis eleifend vitae malesuada magna congue.
+            Damus id ullamcorper neque. Sed vitae mi a mi pretium aliquet ac sed elit.
+            Pellentesque nulla eros accumsan quis justo at tincidunt lobortis denimes loremous.
+            Suspendisse vestibulum lectus in lectus volutpat, ut dapibus purus pulvinar.
+            Vestibulum sit amet auctor ipsum.”
+        </p>
+
+        <!-- Button -->
+        <div class="text-center mt-10">
+            <button
+                class="border-2 border-[#955AA4] py-2 px-6 rounded-lg 
+                       hover:bg-purple-400 hover:text-white transition 
+                       capitalize w-full sm:w-auto">
+                <a href="#" class="block">Have a question? Ask an expert</a>
+            </button>
+        </div>
+
+    </div>
+</section>
+
         <!-- ----------------- related products ----------------- -->
-        <section class="products py-[97px]">
-            <h3 class="font-poppins font-semibold text-[32px] text-[#424242] capitalize text-center mb-[89px]">related
-                products</h3>
-            <div class="container grid grid-cols-4 gap-5">
-                <div class="card">
-                    <figure class="mb-5">
-                        <img src="./images/products/lightweightheadphone.png" alt="headphone image">
-                    </figure>
-                    <div class="text">
-                        <ul class="flex justify-between items-center">
-                            <li class="font-poppins font-medium text-[20px] text-[#000000] capitalize">lightweight
-                                headset</li>
-                            <li class="font-poppins font-medium text-[18px] text-[#000000] capitalize">5.0 <span><i
-                                        class="fa-solid fa-star "></i></span></li>
-                        </ul>
-                        <p class="font-inter font-normal text-[16px] ">Curabitur malesuada elit sed enim placerat vitae
-                            interdum.</p>
-                        <p class="text-center font-inter font-semibold text-[16px] ">Rs.3,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure class="mb-5">
-                        <img src="./images/products/goldheadphone.png" alt="headphone image">
-                    </figure>
-                    <div class="text">
-                        <ul class="flex justify-between items-center">
-                            <li class="font-poppins font-medium text-[20px] text-[#000000] capitalize">gold
-                                headset</li>
-                            <li class="font-poppins font-medium text-[18px] text-[#000000] capitalize">4.8 <span><i
-                                        class="fa-solid fa-star "></i></span></li>
-                        </ul>
-                        <p class="font-inter font-normal text-[16px] ">Curabitur malesuada elit sed enim placerat vitae
-                            interdum.</p>
-                        <p class="text-center font-inter font-semibold text-[16px] text-[#000000]">Rs.4,000</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure class="mb-5">
-                        <img src="./images/products/goldheadphone2.png" alt="headphone image">
-                    </figure>
-                    <div class="text">
-                        <ul class="flex justify-between items-center">
-                            <li class="font-poppins font-medium text-[20px] text-[#000000] capitalize">leather
-                                headset</li>
-                            <li class="font-poppins font-medium text-[18px] text-[#000000] capitalize">5.0 <span><i
-                                        class="fa-solid fa-star "></i></span></li>
-                        </ul>
-                        <p class="font-inter font-normal text-[16px] ">Curabitur malesuada elit sed enim placerat vitae
-                            interdum.</p>
-                        <p class="text-center font-inter font-semibold text-[16px] ">Rs.4,200</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <figure class="mb-5">
-                        <img src="./images/products/redheadphone.png" alt="headphone image">
-                    </figure>
-                    <div class="text">
-                        <ul class="flex justify-between items-center">
-                            <li class="font-poppins font-medium text-[20px] text-[#000000] capitalize">lightweight
-                                headset</li>
-                            <li class="font-poppins font-medium text-[18px] text-[#000000] capitalize">5.0 <span><i
-                                        class="fa-solid fa-star "></i></span></li>
-                        </ul>
-                        <p class="font-inter font-normal text-[16px] ">Curabitur malesuada elit sed enim placerat vitae
-                            interdum.</p>
-                        <p class="text-center font-inter font-semibold text-[16px] ">Rs.4,200</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="footer py-[97px] bg-[#424242] text-white">
-            <div class="container grid grid-cols-4 mb-[20px]">
+       <section class="products py-12 md:py-16 lg:py-24">
+    
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <h3 class="font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl 
+                   text-[#424242] capitalize text-center mb-12 md:mb-16">
+            related products
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card -->
+            <div class="group bg-white rounded-xl shadow-md 
+                        hover:shadow-2xl transition duration-500 
+                        overflow-hidden p-4">
+
+                <figure class="overflow-hidden rounded-lg mb-5">
+                    <img src="./images/products/lightweightheadphone.png"
+                         alt="headphone image"
+                         class="w-full h-52 object-contain 
+                                transform group-hover:scale-110 
+                                transition duration-500">
+                </figure>
+
                 <div>
-                    <ul>
-                        <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA
-                            30008</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-envelope"></i> <a href="#">support@example.com</a>
+                    <ul class="flex justify-between items-center mb-2">
+                        <li class="font-poppins font-medium text-lg capitalize">
+                            lightweight headset
+                        </li>
+                        <li class="font-poppins font-medium text-base">
+                            5.0 <i class="fa-solid fa-star text-yellow-400"></i>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">information</p>
-                    <ul>
-                        <li class="pb-[24px]"><a href="#">About us</a></li>
-                        <li class="pb-[24px]"><a href="#">contact us</a></li>
-                        <li class="pb-[24px]"><a href="#">Help & FAQ's</a></li>
-                        <li class="pb-[24px]"><a href="#">Working Hours</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">support</p>
-                    <ul>
-                        <li class="pb-[24px]"><a href="#">Order Return</a></li>
-                        <li class="pb-[24px]"><a href="#">Privacy Policy</a></li>
-                        <li class="pb-[24px]"><a href="#">Shipping Details</a></li>
-                        <li class="pb-[24px]"><a href="#">Online Payment</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="capitalize pb-[24px]">sign up and save</p>
-                    <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
-                        <form class="bg-[white] relative">
-                            <input type="mail" id="mail"
-                                class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
-                                placeholder="Email address">
-                        </form>
-                        <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
-                            Sign up
-                        </button>
-                    </div>
-                    <p class="text-xs text-gray-300 mt-3 leading-relaxed">
-                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+
+                    <p class="font-inter text-sm text-gray-600 mb-3">
+                        Curabitur malesuada elit sed enim placerat vitae interdum.
+                    </p>
+
+                    <p class="text-center font-inter font-semibold text-base">
+                        Rs.3,000
                     </p>
                 </div>
             </div>
-            <div class="border-t-[1px] border-t-white">
-                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#">soundex</a></p>
+
+            <!-- Repeat Card (same structure for others) -->
+
+            <div class="group bg-white rounded-xl shadow-md 
+                        hover:shadow-2xl transition duration-500 
+                        overflow-hidden p-4">
+                <figure class="overflow-hidden rounded-lg mb-5">
+                    <img src="./images/products/goldheadphone.png"
+                         alt="headphone image"
+                         class="w-full h-52 object-contain 
+                                transform group-hover:scale-110 
+                                transition duration-500">
+                </figure>
+
+                <div>
+                    <ul class="flex justify-between items-center mb-2">
+                        <li class="font-poppins font-medium text-lg capitalize">
+                            gold headset
+                        </li>
+                        <li class="font-poppins font-medium text-base">
+                            4.8 <i class="fa-solid fa-star text-yellow-400"></i>
+                        </li>
+                    </ul>
+
+                    <p class="font-inter text-sm text-gray-600 mb-3">
+                        Curabitur malesuada elit sed enim placerat vitae interdum.
+                    </p>
+
+                    <p class="text-center font-inter font-semibold text-base">
+                        Rs.4,000
+                    </p>
+                </div>
             </div>
-        </section>
+
+            <!-- Third Card -->
+
+            <div class="group bg-white rounded-xl shadow-md 
+                        hover:shadow-2xl transition duration-500 
+                        overflow-hidden p-4">
+                <figure class="overflow-hidden rounded-lg mb-5">
+                    <img src="./images/products/goldheadphone2.png"
+                         alt="headphone image"
+                         class="w-full h-52 object-contain 
+                                transform group-hover:scale-110 
+                                transition duration-500">
+                </figure>
+
+                <div>
+                    <ul class="flex justify-between items-center mb-2">
+                        <li class="font-poppins font-medium text-lg capitalize">
+                            leather headset
+                        </li>
+                        <li class="font-poppins font-medium text-base">
+                            5.0 <i class="fa-solid fa-star text-yellow-400"></i>
+                        </li>
+                    </ul>
+
+                    <p class="font-inter text-sm text-gray-600 mb-3">
+                        Curabitur malesuada elit sed enim placerat vitae interdum.
+                    </p>
+
+                    <p class="text-center font-inter font-semibold text-base">
+                        Rs.4,200
+                    </p>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+
+            <div class="group bg-white rounded-xl shadow-md 
+                        hover:shadow-2xl transition duration-500 
+                        overflow-hidden p-4">
+                <figure class="overflow-hidden rounded-lg mb-5">
+                    <img src="./images/products/redheadphone.png"
+                         alt="headphone image"
+                         class="w-full h-52 object-contain 
+                                transform group-hover:scale-110 
+                                transition duration-500">
+                </figure>
+
+                <div>
+                    <ul class="flex justify-between items-center mb-2">
+                        <li class="font-poppins font-medium text-lg capitalize">
+                            red headset
+                        </li>
+                        <li class="font-poppins font-medium text-base">
+                            5.0 <i class="fa-solid fa-star text-yellow-400"></i>
+                        </li>
+                    </ul>
+
+                    <p class="font-inter text-sm text-gray-600 mb-3">
+                        Curabitur malesuada elit sed enim placerat vitae interdum.
+                    </p>
+
+                    <p class="text-center font-inter font-semibold text-base">
+                        Rs.4,200
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+     <footer>
+      <section class="footer py-[108px] bg-[#424242] text-white">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-[20px]">
+          <div>
+            <ul>
+              <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA 30008</li>
+              <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><i class="fa-solid fa-envelope"></i> <a
+                  href="#">support@example.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">information</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">About us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">contact us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Help & FAQ's</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Working Hours</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">support</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Order Return</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Privacy Policy</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Shipping Details</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Online Payment</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="capitalize pb-[24px]">sign up and save</p>
+            <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
+              <form class="bg-[white] relative">
+                <input type="mail" id="mail" class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
+                  placeholder="Email address">
+              </form>
+              <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
+                Sign up
+              </button>
+            </div>
+            <p class="text-xs text-gray-300 mt-3 leading-relaxed">
+              Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+            </p>
+          </div>
+        </div>
+        <div class="border-t-[1px] border-t-white">
+          <p class="text-center pt-[70px] capitalize">2025 designed <a href="#"
+              class="hover:text-orange-300 transition">soundex</a></p>
+        </div>
+      </section>
     </footer>
     <script src="./js/main.js"></script>
 </body>

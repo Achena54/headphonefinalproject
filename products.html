@@ -18,347 +18,278 @@
 <body>
     <header>
         <!-- --------------------- navbar --------------------- -->
-        <div class="container mx-auto  rounded-[15px]  left-25 bg-[#faeded]">
-            <nav class="flex ">
-                <div class="navlogo">
-                    <img src="./images/home/navlogo.jpg" alt="logo" class="inline-block items-center"></a>
-                </div>
-                <div class="navitems mx-auto mt-3 md:block items-start ">
-                    <ul class="flex justify-center items-center ">
-                        <li><a href="./index.html"
-                                class="ml-7.5 font-semibold text-[20px] text-[#424242] capitalize">Home</a></li>
-                        <li><a href="./products.html"
-                                class="ml-7.5  font-semibold text-[20px] text-[#9179FE] capitalize">products</a></li>
-                        <li><a href="./about.html"
-                                class="ml-7.5 text-[#424242] font-semibold text-[20px] capitalize">about us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navicon mt-3 md:ml-[0]">
-                    <ul class="flex justify-center items-center md:flex-row flex-col ">
-                        <li><a href="./login.html" class="ml-7.5 text-[#424242] text-[20px] font-semibold">login</a>
-                        </li>
-                        <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
-                                class="absolute top-0">0</span></li>
-                        <li><a href="#" class="ml-7.5"><i class="fa-solid fa-arrow-up-right-dots "></i></a></li>
-                    </ul>
-                </div>
-                <button class="hidden">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </nav>
+       <div class="container mx-auto rounded-[15px]  px-4">
+    <nav class="flex items-center justify-between py-4 relative">
+
+        <!-- Logo -->
+        <div class="navlogo">
+            <img src="./images/home/navlogo.jpg" alt="logo" class="h-10 w-auto">
         </div>
+
+        <!-- Nav Items -->
+        <div class="navitems hidden md:block">
+            <ul class="flex justify-center items-center space-x-8">
+                <li>
+                    <a href="./index.html"
+                        class="font-semibold text-[18px] lg:text-[20px] text-[#424242] capitalize hover:text-[#9179FE] transition">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./products.html"
+                        class="font-semibold text-[18px] lg:text-[20px] text-[#9179FE] capitalize">
+                        products
+                    </a>
+                </li>
+                <li>
+                    <a href="./about.html"
+                        class="font-semibold text-[18px] lg:text-[20px] text-[#424242] capitalize hover:text-[#9179FE] transition">
+                        about us
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Icons -->
+        <div class="navicon hidden md:block">
+            <ul class="flex items-center space-x-6 relative">
+                <li>
+                    <a href="./login.html"
+                        class="text-[#424242] text-[18px] lg:text-[20px] font-semibold hover:text-[#9179FE] transition">
+                        login
+                    </a>
+                </li>
+                <li class="relative">
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping text-xl"></i>
+                    </a>
+                    <span class="absolute -top-2 -right-2 bg-purple-500 text-white text-xs px-1.5 rounded-full">
+                        0
+                    </span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-dots text-xl"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-2xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </nav>
+</div>
+
     </header>
     <main>
         <!-- --------------------- banner -------------------------- -->
-        <section class="banner bg-[url(/images/products/productbanner.png)] w-full h-screen bg-center bg-no-repeat">
-            <div class="container text-center">
-                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">products</h1>
-                <div class="text-white font-normal text-[20px] capitalize font-poppins">
-                    <span>home</span>/<span>products</span>
-                </div>
+        <section class="banner bg-[url(/images/products/productbanner.png)] 
+                w-full h-screen md:h-screen h-[60vh] 
+                bg-center bg-no-repeat bg-cover">
 
-            </div>
-        </section>
+    <div class="container text-center flex flex-col justify-center h-full">
+
+        <h1 class="pt-[150px] md:pt-[250px] lg:pt-[300px] 
+                   text-white capitalize font-poppins 
+                   text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] 
+                   font-semibold">
+            products
+        </h1>
+
+        <div class="text-white font-normal 
+                    text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
+                    capitalize font-poppins mt-3">
+            <span>home</span>/<span>products</span>
+        </div>
+
+    </div>
+</section>
         <!-- ----------------------- section ------------------------ -->
         <section class="py-[108px]">
-            <div class="container">
-                <div class="grid grid-cols-2">
-                    <div class="left_part w-[389px] h-[1609]">
-                        <h3
-                            class="border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            category</h3>
-                        <div class="grid grid-cols-2">
-                            <p
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                Bluetooth Headsets</p>
-                            <p
-                                class="pl-[185px] pt-[10px] hover:text-purple-700 transition font-normal font-poppins text-[16px] text-[#000000]">
-                                +</p>
-                        </div>
-                        <div class="grid grid-cols-2">
-                            <p
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                Bluetooth Headsets</p>
-                            <p class="pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
-                        </div>
-                        <div class="grid grid-cols-2">
-                            <p
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                Bluetooth Headsets</p>
-                            <p class="pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
-                        </div>
-                        <h3
-                            class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            shop by materials</h3>
-                        <ul class="list-disc pl-[35px]">
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                silicon</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                plastic</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                leather</li>
-                        </ul>
-                        <h3
-                            class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            shop by price</h3>
-                        <ul class="list-disc pl-[35px]">
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                1000-2000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                2000-3000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                3000-4000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                4000-5000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                5000-6000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                6000-7000</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                7000-8000</li>
-                        </ul>
-                        <h3
-                            class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            shop by brand</h3>
-                        <ul class="list-disc pl-[35px]">
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                autofy</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                bloom</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                beat</li>
-                        </ul>
-                        <h3
-                            class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            shop by type</h3>
-                        <ul class="list-disc pl-[35px]">
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                bluetooth headphones</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                on-ear-headphones</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                in-ear-headphones</li>
-                            <li
-                                class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
-                                noise cancelling headphones</li>
-                        </ul>
-                        <h3
-                            class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
-                            shop by type</h3>
-                        <div class="card">
-                            <figure>
-                                <img src="./images/home/orangeheadphone.png" alt="headphone img">
-                            </figure>
-                            <h4 class="capitalize font-poppins text-[20px] pb-[20px] text-center">gaming headset</h4>
-                            <p class="text-[#955AA4] pb-[20px] text-center">Rs.6000.00</p>
-                            <div class="text-center">
-                                <button
-                                    class="border-[#955AA4]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#" c>view products</a>
-                                </button>
-                            </div>
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-                        </div>
-                    </div>
-                    <div class="right_part ">
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/redheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px] ">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">red headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.910.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class=" pt-2">
-                                <img src="./images/products/lightweightheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">lightweight headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/goldheadphone2.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">gold headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4]  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/goldheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">leather headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4] capitalize  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/redheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">red headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4] capitalize border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/lightweightheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">lightweight headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.910.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4] capitalize border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/goldheadphone2.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">gold headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4] capitalize  border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
-                            <figure class="hover:scale-90 pt-2">
-                                <img src="./images/products/goldheadphone.png" alt="headphone">
-                            </figure>
-                            <div class="details py-[47px]">
-                                <h3 class="capitalize font-poppins text-[20px] pb-[20px]">leather headset</h3>
-                                <p class="text-[#955AA4] pb-[20px]">Rs.3000.00</p>
-                                <p class="pb-[20px]">Nam tempus turpis at metus scelerisque placerat nulla deumantos
-                                    solicitud felis.
-                                    Pellentesque dia...</p>
-                                <button
-                                    class="border-[#955AA4] capitalize border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                        href="#">view products</a></button>
-                            </div>
-                        </div>
-                        <button
-                            class="border-[#955AA4] capitalize mb-5 border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]"><a
-                                href="#" clss="text-center">show more</a>
+            <!-- Left Sidebar -->
+            <div class="left_part w-full md:w-[389px] h-auto">
+
+                <h3 class="border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
+                    category
+                </h3>
+
+                <div class="grid grid-cols-2">
+                    <p class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
+                        Bluetooth Headsets
+                    </p>
+                    <p class="pl-[0] md:pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
+                </div>
+
+                <div class="grid grid-cols-2">
+                    <p class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
+                        Bluetooth Headsets
+                    </p>
+                    <p class="pl-[0] md:pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
+                </div>
+
+                <div class="grid grid-cols-2">
+                    <p class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
+                        Bluetooth Headsets
+                    </p>
+                    <p class="pl-[0] md:pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
+                </div>
+                <div class="grid grid-cols-2">
+                    <p class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">
+                        <a href="./wirelessheadset.html">wireless headsets</a>
+                    </p>
+                    <p class="pl-[0] md:pl-[185px] pt-[10px] hover:text-purple-700 transition">+</p>
+                </div>
+                
+
+                <h3 class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
+                    shop by materials
+                </h3>
+                <ul class="list-disc pl-[20px] md:pl-[35px]">
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">silicon</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">plastic</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">leather</li>
+                </ul>
+
+                <h3 class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
+                    shop by price
+                </h3>
+                <ul class="list-disc pl-[20px] md:pl-[35px]">
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">1000-2000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">2000-3000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">3000-4000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">4000-5000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">5000-6000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">6000-7000</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">7000-8000</li>
+                </ul>
+
+                <h3 class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
+                    shop by brand
+                </h3>
+                <ul class="list-disc pl-[20px] md:pl-[35px]">
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">autofy</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">bloom</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">beat</li>
+                </ul>
+
+                <h3 class="pt-[45px] border-b-[1px] pb-[5px] capitalize font-normal font-poppins text-[20px] text-[#000000]">
+                    shop by type
+                </h3>
+                <ul class="list-disc pl-[20px] md:pl-[35px]">
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">bluetooth headphones</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">on-ear-headphones</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">in-ear-headphones</li>
+                    <li class="pt-[10px] hover:text-purple-700 transition capitalize font-normal font-poppins text-[16px] text-[#000000]">noise cancelling headphones</li>
+                </ul>
+
+                <div class="card mt-5">
+                    <figure>
+                        <img src="./images/home/orangeheadphone.png" alt="headphone img" class="w-full h-auto">
+                    </figure>
+                    <h4 class="capitalize font-poppins text-[20px] pb-[20px] text-center">gaming headset</h4>
+                    <p class="text-[#955AA4] pb-[20px] text-center">Rs.6000.00</p>
+                    <div class="text-center">
+                        <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px]">
+                            <a href="#">view products</a>
                         </button>
                     </div>
                 </div>
+
             </div>
-        </section>
+
+            <!-- Right Products Part -->
+            <div class="right_part w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Example Product Card -->
+                    <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/redheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">red headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Repeat other product cards with same responsive classes -->
+                    
+                </div>
+
+                <!-- Show More Button -->
+                <button class="border-[#955AA4] capitalize mb-5 border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] w-full md:w-auto">
+                    <a href="#" class="text-center">show more</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
     <!-- --------------------- footer --------------------------------- -->
     <footer>
-        <section class="footer py-[108px] bg-[#424242] text-white">
-            <div class="container grid grid-cols-4 mb-[20px]">
-                <div>
-                    <ul>
-                        <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA
-                            30008</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-envelope"></i> <a href="#">support@example.com</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">information</p>
-                    <ul>
-                        <li class="pb-[24px]"><a href="#">About us</a></li>
-                        <li class="pb-[24px]"><a href="#">contact us</a></li>
-                        <li class="pb-[24px]"><a href="#">Help & FAQ's</a></li>
-                        <li class="pb-[24px]"><a href="#">Working Hours</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">support</p>
-                    <ul>
-                        <li class="pb-[24px]"><a href="#">Order Return</a></li>
-                        <li class="pb-[24px]"><a href="#">Privacy Policy</a></li>
-                        <li class="pb-[24px]"><a href="#">Shipping Details</a></li>
-                        <li class="pb-[24px]"><a href="#">Online Payment</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="capitalize pb-[24px]">sign up and save</p>
-                    <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
-                        <form class="bg-[white] relative">
-                            <input type="mail" id="mail"
-                                class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
-                                placeholder="Email address">
-                        </form>
-                        <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
-                            Sign up
-                        </button>
-                    </div>
-                    <p class="text-xs text-gray-300 mt-3 leading-relaxed">
-                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
-                    </p>
-                </div>
+         <footer>
+      <section class="footer py-[108px] bg-[#424242] text-white">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-[20px]">
+          <div>
+            <ul>
+              <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA 30008</li>
+              <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><i class="fa-solid fa-envelope"></i> <a
+                  href="#">support@example.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">information</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">About us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">contact us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Help & FAQ's</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Working Hours</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">support</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Order Return</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Privacy Policy</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Shipping Details</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Online Payment</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="capitalize pb-[24px]">sign up and save</p>
+            <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
+              <form class="bg-[white] relative">
+                <input type="mail" id="mail" class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
+                  placeholder="Email address">
+              </form>
+              <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
+                Sign up
+              </button>
             </div>
-            <div class="border-t-[1px] border-t-white">
-                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#">soundex</a></p>
-            </div>
-        </section>
+            <p class="text-xs text-gray-300 mt-3 leading-relaxed">
+              Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+            </p>
+          </div>
+        </div>
+        <div class="border-t-[1px] border-t-white">
+          <p class="text-center pt-[70px] capitalize">2025 designed <a href="#"
+              class="hover:text-orange-300 transition">soundex</a></p>
+        </div>
+      </section>
+    </footer>
     </footer>
 </body>
 

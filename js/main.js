@@ -1,9 +1,17 @@
-const btn = document.getElementById('menu-btn');
-const menu = document.getElementById('menu');
+AOS.init();
 
-btn.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
+
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
 });
+
+
+
+
 
 new Swiper(".headphoneSwiper", {
   slidesPerView: 1,
@@ -30,17 +38,17 @@ $(function () {
 
   let user_no_err = true;
   let pass_no_err = true;
-  $('#username').on('keyup',user_check)
-  
-  function user_check(){
+  $('#username').on('keyup', user_check)
+
+  function user_check() {
     let data = $('#username').val();
     console.log("username", data);
-    if(data.length<1){
-       $('#usercheck').show();
-        $('#usercheck').html("* required field");
-         user_no_err = false;
+    if (data.length < 1) {
+      $('#usercheck').show();
+      $('#usercheck').html("* required field");
+      user_no_err = false;
     }
-else if (data.length < 4) {
+    else if (data.length < 4) {
       $('#usercheck').show();
       $('#usercheck').html("* min length 4")
       user_no_err = false;
