@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
+
     <link rel="stylesheet" href="./output/style.css">
 </head>
+
 <body>
     <header>
         <div class="container mx-auto  rounded-[15px]  left-25 bg-[#faeded]">
@@ -32,7 +35,7 @@
                 </div>
                 <div class="navicon mt-3 md:ml-[0]">
                     <ul class="flex justify-center items-center md:flex-row flex-col ">
-                        <li><a href="./login.html" class="ml-7.5 text-[#9179FE] text-[20px] font-semibold">login</a>
+                        <li><a href="./login.html" class="ml-7.5  text-[20px] font-semibold">login</a>
                         </li>
                         <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
                                 class="absolute top-0">0</span></li>
@@ -49,7 +52,7 @@
         <!-- --------------------- banner ---------------------------->
         <section class="banner bg-[url(/images/login/loginbanner.png)] w-full h-screen bg-center bg-no-repeat">
             <div class="container text-center">
-                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">login</h1>
+                <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">membership</h1>
                 </h1>
                 <div class="text-white font-normal text-[20px] capitalize font-poppins">
                     <span>home</span>/<span>login</span>/<span>sign up</span>
@@ -65,39 +68,55 @@
                     </figure>
                 </div>
                 <div class="right_part">
-                    <h4 class="ml-5 mb-5 font-poppins font-medium text-[28px] capitalize">login</h4>
+                    <h4 class="ml-5 mb-5 font-poppins font-medium text-[28px] capitalize">membership</h4>
 
-                    <form action="./loginsucces.html"  id="rform" class="max-w-sm ml-5">
+                    <form action="./loginsucces.html" id="rform" class=" ml-5">
                         <div class="mb-5">
-                            <label for="email" class="block mb-2.5 text-sm font-medium text-heading capitalize">email</label>
+                            <label for="name" class="block mb-2.5 text-sm font-medium text-heading capitalize">your
+                                name <span class="text-red-700">*</span></label>
+                            <input type="name" id="usename"
+                                class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
+                                placeholder="name@mail.com" />
+                            <p id="usercheck" class="error"></p>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email"
+                                class="block mb-2.5 text-sm font-medium text-heading capitalize">email <span class="text-red-700">*</span></label>
                             <input type="email" id="mailuser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-                                placeholder="name@mail.com" required />
-                                <p id="mailcheck" class="error"></p>
+                                placeholder="name@mail.com" />
+                            <p id="mailcheck" class="error"></p>
                         </div>
                         <div class="mb-5">
+
                             <label for="passowrd" class="block mb-2.5 text-sm font-medium text-heading capitalize">
-                                password</label>
+                                password <span class="text-red-700">*</span></label>
                             <input type="pwd" id="pwduser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-                                placeholder="••••••••" required />
-                                <p id="pwdcheck" class="error"></p>
+                                placeholder="••••••••" />
+                            <p id="pwdcheck" class="error"></p>
                         </div>
-                        
-                      <button type="submit" class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[18px]">Log in</button>
+
+                        <button type="submit"
+                            class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[18px]">Log
+                            in</button>
 
                     </form>
-                    <p class="ml-[200px] my-3">or</p>
-                    <p class="ml-[100px] my-3">don't have an accout? <a href="./membership.html">membership</a></p>
-                    <p class="ml-[50px] border-b-2">By signing up, you agree to our Terms Of Use and Privacy Policy</p>
+                    <p class="text-center my-3">or</p>
+                    <p class="text-center my-3 capitalize">continue with google <span><i class="fa-brands fa-google"></i></span>
+                    </p>
+                    <p class="text-center my-3 capitalize">continue with linkedin <span><i class="fa-brands fa-linkedin"></i></span></p>
+                    <p class="text-center my-3 capitalize">already have an account? <a href="./login.html" class="text-[#9179FE]">sign in here</a></p>
+                    <p class="text-center capitalize "> <u>By signing up, you agree to our Terms <br>Of Use and Privacy Policy</u>
+                    </p>
 
                 </div>
             </div>
 
         </section>
     </main>
-   <footer>
-        <section class="footer pt-[108px] pb-[108px] bg-[#424242] text-white">
+    <footer>
+        <section class="footer py-[108px] bg-[#424242] text-white">
             <div class="container grid grid-cols-4 mb-[20px]">
                 <div>
                     <ul>
@@ -148,5 +167,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

@@ -16,10 +16,7 @@
     --font-orbiton: "Orbitron", sans-serif;
     --font-inter:"Inter", sans-serif;
     --violet: #6D247F;
-    --breakpoint-sm: "340px";
-    --breakpoints-md: "540px";
-    --breakpoint-lg: "768px";
-    --breakpoints-xl: "1180px";
+   
      --animate-bg: bgFade 12s infinite;
     --animate-text: textSlide 12s infinite;
     --animate-image: imageSlide 12s infinite;

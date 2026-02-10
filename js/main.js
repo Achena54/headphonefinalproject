@@ -1,34 +1,56 @@
- const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
 
-   btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
 
-  new Swiper(".headphoneSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+new Swiper(".headphoneSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 4,
-      },
+    1024: {
+      slidesPerView: 4,
     },
-  });
+  },
+});
 
-  $(function () {
-
+$(function () {
+  $('#usercheck').hide();
   $('#mailcheck').hide();
   $('#pwdcheck').hide();
 
+
   let user_no_err = true;
   let pass_no_err = true;
+  $('#username').on('keyup',user_check)
+  
+  function user_check(){
+    let data = $('#username').val();
+    console.log("username", data);
+    if(data.length<1){
+       $('#usercheck').show();
+        $('#usercheck').html("* required field");
+         user_no_err = false;
+    }
+else if (data.length < 4) {
+      $('#usercheck').show();
+      $('#usercheck').html("* min length 4")
+      user_no_err = false;
+    }
+
+    else {
+      $('#usercheck').hide();
+      user_no_err = true;
+    }
+  }
 
   $('#mailuser').on('keyup', mail_check)
 
@@ -38,7 +60,7 @@
     if (data.length < 1) {
 
       $('#mailcheck').show();
-      $('#mailcheck').html("* required field")
+      $('#mailcheck').html("* required field");
       user_no_err = false;
 
     }
@@ -82,6 +104,7 @@
   $('#rform').submit(function () {
     mail_check();
     pass_check();
+    user_check();
 
     if (user_no_err == true && pass_no_err == true) {
       return true;

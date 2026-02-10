@@ -35,7 +35,7 @@
                 </div>
                 <div class="navicon mt-3 md:ml-[0]">
                     <ul class="flex justify-center items-center md:flex-row flex-col ">
-                        <li><a href="./login.html" class="ml-7.5 text-[#9179FE] text-[20px] font-semibold">login</a>
+                        <li><a href="./login.html" class="ml-7.5 text-[#424242] text-[20px] font-semibold">login</a>
                         </li>
                         <li><a href="#" class="ml-7.5 "><i class="fa-solid fa-bag-shopping relative"></i></a><span
                                 class="absolute top-0">0</span></li>
@@ -55,7 +55,7 @@
                 <h1 class="pt-[300px] text-white capitalize font-poppins text-[64px] font-semibold">login</h1>
                 </h1>
                 <div class="text-white font-normal text-[20px] capitalize font-poppins">
-                    <span>home</span>/<span>login</span>
+                    <span>home</span>/<span>login</span>/<span>sign up</span>
                 </div>
             </div>
         </section>
@@ -68,31 +68,32 @@
                     </figure>
                 </div>
                 <div class="right_part">
-                    <h4 class="ml-5 mb-5 font-poppins font-medium text-[28px] capitalize">login</h4>
+                    <h4 class="ml-5 mb-5 text-[#423772] font-poppins font-medium text-[28px] capitalize ">login</h4>
 
-                    <form action="./loginsucces.html"  id="rform" class="max-w-sm ml-5">
+                    <form action="./loginsucces.html"  id="rform" class=" ml-5">
                         <div class="mb-5">
-                            <label for="email" class="block mb-2.5 text-sm font-medium text-heading capitalize">email</label>
+                            <label for="email" class="block mb-2.5 text-sm font-medium text-heading capitalize">email <span class="text-red-700">*</span></label>
                             <input type="email" id="mailuser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-                                placeholder="name@mail.com" required />
+                                placeholder="name@mail.com"  />
                                 <p id="mailcheck" class="error"></p>
                         </div>
                         <div class="mb-5">
                             <label for="passowrd" class="block mb-2.5 text-sm font-medium text-heading capitalize">
-                                password</label>
+                                password <span class="text-red-700">*</span></label>
                             <input type="pwd" id="pwduser"
                                 class="bg-neutral-secondary-medium border-0 border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body"
-                                placeholder="••••••••" required />
+                                placeholder="••••••••"  />
                                 <p id="pwdcheck" class="error"></p>
                         </div>
                         
                       <button type="submit" class="text-black bg-brand box-border border border-purple-600 hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none w-full font-poppins font-semibold text-[18px]">Log in</button>
 
                     </form>
-                    <p class="ml-[200px] my-3">or</p>
-                    <p class="ml-[100px] my-3">don't have an accout? <a href="./membership.html">membership</a></p>
-                    <p class="ml-[50px] border-b-2">By signing up, you agree to our Terms Of Use and Privacy Policy</p>
+                    <p class="text-center my-3">or</p>
+                    <p class="text-center my-3 capitalize">don't have an account? <a href="./membership.html"  class="text-[#9179FE]">membership</a></p>
+                    <p class="text-center capitalize "> <u>By signing up, you agree to our Terms <br>Of Use and Privacy Policy</u>
+                    </p>
 
                 </div>
             </div>
@@ -100,7 +101,7 @@
         </section>
     </main>
    <footer>
-        <section class="footer pt-[108px] pb-[108px] bg-[#424242] text-white">
+        <section class="footer py-[108px] bg-[#424242] text-white">
             <div class="container grid grid-cols-4 mb-[20px]">
                 <div>
                     <ul>
@@ -151,6 +152,7 @@
             </div>
         </section>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
