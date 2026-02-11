@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css">
-
+ 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="./output/style.css">
 </head>
 
@@ -147,9 +149,9 @@
                 <div class="text-white font-normal 
                     text-sm sm:text-base md:text-lg 
                     capitalize font-poppins mt-4">
-                    <span class="hover:text-purple-300 cursor-pointer">home</span> /
-                    <span class="hover:text-purple-300 cursor-pointer">login</span> /
-                    <span class="hover:text-purple-300 cursor-pointer">sign up</span>
+                    <span class=" hover:text-yellow-400 cursor-pointer">home</span> /
+                    <span class=" hover:text-yellow-400 cursor-pointer">login</span> /
+                    <span class="text-purple-500 hover:text-yellow-400 cursor-pointer">sign up</span>
                 </div>
 
             </div>
@@ -157,10 +159,11 @@
 
         <!-- ----------------------- form ------------------------------ -->
         <section class="form py-[60px] md:py-[80px] lg:py-[108px]">
-            <div class="container grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <div class="container grid grid-cols-1 md:grid-cols-2 items-center gap-10" data-aos="fade-down"
+                    data-aos-duration="3000">
 
                 <!-- Left Part -->
-                <div class="left_part">
+                <div class="left_part" >
                     <figure class="overflow-hidden object-cover transition duration-500 ease-in-out hover:scale-110">
                         <img src="./images/login/loginphoto.png" alt="man img" class="w-full h-auto mx-auto">
                     </figure>
@@ -243,59 +246,60 @@
         </section>
 
     </main>
-    <footer>
-        <section class="footer py-[108px] bg-[#424242] text-white">
-            <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-[20px]">
-                <div>
-                    <ul>
-                        <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA
-                            30008</li>
-                        <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><i class="fa-solid fa-envelope"></i> <a
-                                href="#">support@example.com</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">information</p>
-                    <ul>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">About us</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">contact us</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Help & FAQ's</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Working Hours</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="pb-[24px] capitalize">support</p>
-                    <ul>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Order Return</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Privacy Policy</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Shipping Details</a></li>
-                        <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Online Payment</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="capitalize pb-[24px]">sign up and save</p>
-                    <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
-                        <form class="bg-[white] relative">
-                            <input type="mail" id="mail"
-                                class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
-                                placeholder="Email address">
-                        </form>
-                        <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
-                            Sign up
-                        </button>
-                    </div>
-                    <p class="text-xs text-gray-300 mt-3 leading-relaxed">
-                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
-                    </p>
-                </div>
+     <footer>
+      <section class="footer py-[108px] bg-[#424242] text-white">
+        <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-[20px]">
+          <div>
+            <ul>
+              <li class="pb-[24px]"><i class="fa-solid fa-location-dot"></i> 533 South Brown Dr. Marietta, GA 30008</li>
+              <li class="pb-[24px]"><i class="fa-solid fa-phone"></i> 000-123-45678</li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><i class="fa-solid fa-envelope"></i> <a
+                  href="#">support@example.com</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">information</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">About us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">contact us</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Help & FAQ's</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Working Hours</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="pb-[24px] capitalize">support</p>
+            <ul>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Order Return</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Privacy Policy</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Shipping Details</a></li>
+              <li class="pb-[24px] hover:text-orange-300 transition"><a href="#">Online Payment</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="capitalize pb-[24px]">sign up and save</p>
+            <div class="flex rounded-md overflow-hidden mt-[5px] pb-[24px]">
+              <form class="bg-[white] relative">
+                <input type="mail" id="mail" class="mail flex-1 px-3 py-2 text-sm text-gray-700 outline-none"
+                  placeholder="Email address">
+              </form>
+              <button class="bg-[#5a5a5a] px-4 text-sm text-white hover:bg-[#4a4a4a] transition">
+                Sign up
+              </button>
             </div>
-            <div class="border-t-[1px] border-t-white">
-                <p class="text-center pt-[70px] capitalize">2025 designed <a href="#"
-                        class="hover:text-orange-300 transition">soundex</a></p>
-            </div>
-        </section>
+            <p class="text-xs text-gray-300 mt-3 leading-relaxed">
+              Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+            </p>
+          </div>
+        </div>
+        <div class="border-t-[1px] border-t-white">
+          <p class="text-center pt-[70px] capitalize">2025 designed <a href="#"
+              class="hover:text-orange-300 transition">soundex</a></p>
+        </div>
+      </section>
     </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script src="./js/main.js"></script>
 </body>
 

@@ -86,27 +86,30 @@
     </header>
     <main>
         <!-- --------------------- banner -------------------------- -->
-        <section class="banner bg-[url(/images/products/productbanner.png)] 
-                w-full h-screen md:h-screen h-[60vh] 
-                bg-center bg-no-repeat bg-cover">
+        <section class="relative w-full min-h-[60vh] md:min-h-screen 
+         bg-[url('/images/wirelessheadset/wirelessheadsetbanner.png')] 
+         bg-cover bg-center bg-no-repeat flex items-center justify-center">
 
-    <div class="container text-center flex flex-col justify-center h-full">
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black/50"></div>
 
-        <h1 class="pt-[150px] md:pt-[250px] lg:pt-[300px] 
-                   text-white capitalize font-poppins 
-                   text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] 
-                   font-semibold">
-            products
-        </h1>
+            <!-- Content -->
+            <div class="relative z-10 container mx-auto px-4 text-center">
 
-        <div class="text-white font-normal 
-                    text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] 
-                    capitalize font-poppins mt-3">
-            <span>home</span>/<span>products</span>
-        </div>
+                <h1 class="text-white capitalize font-poppins font-semibold
+               text-3xl sm:text-4xl md:text-5xl lg:text-[64px]">
+                    products
+                </h1>
 
-    </div>
-</section>
+                <div class="mt-4 text-white font-normal capitalize font-poppins
+                text-sm sm:text-base md:text-lg lg:text-[20px]">
+                    <span>Home</span> /
+                    
+                    <span class="text-purple-300 hover:text-amber-300">products</span>
+                </div>
+
+            </div>
+        </section>
         <!-- ----------------------- section ------------------------ -->
         <section class="py-[108px]">
     <div class="container">
@@ -205,7 +208,7 @@
 
             <!-- Right Products Part -->
             <div class="right_part w-full">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
 
                     <!-- Example Product Card -->
                     <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
@@ -222,7 +225,97 @@
                         </div>
                     </div>
 
-                    <!-- Repeat other product cards with same responsive classes -->
+                   <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/home/blueheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">blue headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/goldheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">gold headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/goldheadphone2.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">leather headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/redheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">red headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                   <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/home/blueheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">blue headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                   <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/goldheadphone.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">gold headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
+                     <div class="grid grid-cols-2 border-0 rounded-2xl mb-[40px] shadow-xl/30">
+                        <figure class="hover:scale-90 pt-2">
+                            <img src="./images/products/goldheadphone2.png" alt="headphone" class="w-full h-auto">
+                        </figure>
+                        <div class="details py-[20px] md:py-[47px] px-3 md:px-0">
+                            <h3 class="capitalize font-poppins text-[20px] pb-[10px] md:pb-[20px]">leather headset</h3>
+                            <p class="text-[#955AA4] pb-[10px] md:pb-[20px]">Rs.910.00</p>
+                            <p class="pb-[10px] md:pb-[20px] text-sm md:text-base">Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque dia...</p>
+                            <button class="border-[#955AA4] border-2 py-2 px-3 rounded-lg hover:bg-purple-700 transition mt-[15px] capitalize w-full md:w-auto">
+                                <a href="#">view products</a>
+                            </button>
+                        </div>
+                    </div>
                     
                 </div>
 
@@ -291,6 +384,7 @@
       </section>
     </footer>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

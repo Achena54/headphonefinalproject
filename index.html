@@ -324,49 +324,55 @@
           </div>
         </div>
       </section>
+      <!-- ---------------------- animation ----------------------- -->
+      <section class="animation py-16 md:py-24 bg-[#fff1e9] overflow-hidden">
+        <div class="container mx-auto px-4 
+              grid grid-cols-1 md:grid-cols-2 
+              items-center gap-10">
 
-      <!-- --------------------- loud and clear ------------------ -->
-      <!-- <section class="loud py-16 md:py-[108px]">
-      <div class="container mx-auto px-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div data-aos="zoom-out-right">
-            <h3 class="font-poppins font-semibold 
-                   text-2xl sm:text-3xl md:text-[38px] 
-                   text-[#424242] leading-snug">
-              Loud & Clear Music brings dreams to life.
+          <!-- LEFT TEXT (Fixed) -->
+          <div>
+            <h3 class="text-2xl sm:text-3xl md:text-4xl 
+                 font-semibold font-poppins leading-snug">
+              Make music listening to a <br class="hidden sm:block">
+              magical experience
             </h3>
-            <p class="font-inter font-normal 
-                  text-sm sm:text-base 
-                  text-[#000000] mt-4 max-w-lg">
-              Curabitur malesuada elit sed enim placerat vitae interdum.
-              Curabitur malesuada elit sed enim placerat vitae interdum.
+
+            <p class="mt-4 text-black text-sm sm:text-base font-normal font-inter">
               Curabitur malesuada elit sed enim placerat vitae interdum.
               Curabitur malesuada elit sed enim placerat vitae interdum.
             </p>
 
-            <button class="border rounded-[10px] px-6 py-3 mt-6
-                 font-poppins font-semibold 
-                 text-base md:text-[18px]
-                 text-[#000000]
-                 hover:bg-purple-500 hover:text-white
-                 transition duration-300">
-              Learn More
-            </button>
+            <ul class="list-disc pl-5 pt-4 space-y-2 text-sm sm:text-base">
+              <li>Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li>Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+              <li>Curabitur malesuada elit sed enim placerat vitae interdum.</li>
+            </ul>
 
+            <button class="mt-6 px-6 py-3 bg-purple-600 
+                     text-white rounded-full 
+                     hover:bg-purple-700 transition">
+              Shop Now
+            </button>
           </div>
 
+          <!-- RIGHT IMAGE SLIDER -->
+          <div class="relative flex justify-center items-center h-[300px] sm:h-[350px] md:h-[400px]">
 
-          <div data-aos="zoom-out-left" class="flex justify-center">
-            <figure class="overflow-hidden rounded-xl">
-              <img src="./images/home/womenimg.png" alt="womenimg" class="w-full 
-                      transition duration-500 
-                      ease-in-out hover:scale-110">
-            </figure>
+            <img src="./images/home/blueheadphone.png" class="slider-img absolute w-64 sm:w-72 md:w-80 lg:w-96">
+
+            <img src="./images/home/orangeheadphone.png" class="slider-img absolute w-64 sm:w-72 md:w-80 lg:w-96">
+
+            <img src="./images/products/redheadphone.png" class="slider-img absolute w-64 sm:w-72 md:w-80 lg:w-96">
+
           </div>
 
         </div>
-      </div> -->
       </section>
+
+
+      <!-- --------------------- loud and clear ------------------ -->
+     
       <section class="loud py-16 md:py-[108px]">
         <div class="container mx-auto" data-aos="fade-down">
           <div class="grid grid-cols-1 md:grid-cols-2  items-center">
@@ -454,24 +460,32 @@
       </section>
       <!-- ------------------- generation ------------------- -->
       <section class="generation py-16 md:py-24 lg:py-[108px] overflow-hidden">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="fade-down">
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <!-- LEFT IMAGE -->
             <div class="flex justify-center lg:justify-start">
 
-              <figure class="relative 
-                       transition duration-500 ease-in-out hover:scale-105">
+              <figure class="relative w-fit mx-auto 
+               transition duration-500 ease-in-out 
+               hover:scale-105">
 
+                <!-- Main Headphone Image -->
                 <img src="./images/home/orangeheadphone.png" alt="headphone"
                   class="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl">
-              </figure>
 
+                <!-- Centered Woman Image -->
+                <img src="./images/home/womenimg2.png" alt="womanimg" class="absolute 
+              top-1/2 left-1/2 
+              -translate-x-1/2 -translate-y-1/2
+              w-32 sm:w-40 md:w-52 lg:w-60
+              transition duration-500 hover:scale-110">
+              </figure>
             </div>
 
             <!-- RIGHT TEXT -->
-            <div class="text-center lg:text-left">
+            <div class="text-center lg:text-left" data-aos="fade-down">
 
               <h3 class="font-poppins font-semibold
                    text-2xl sm:text-3xl md:text-4xl lg:text-[38px]
@@ -497,19 +511,15 @@
         </div>
       </section>
 
-      <!-- <span class="absolute  top-[3500px] left-80 z-20 w-[470px] h-[626px]">
-            <figure class="object-cover transition duration-500 ease-in-out hover:scale-110">
-              <img src="./images/home/womenimg2.png" alt="womanimg">
-            </figure>
-          </span> -->
+
       <!-- ---------------- customer review ---------------- -->
       <section class="review py-16 md:py-24 lg:py-[108px]">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-4" data-aos="fade-right" data-aos-duration="3000">
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             <!-- LEFT SIDE -->
-            <div class="text-center lg:text-left">
+            <div class="text-center lg:text-left" >
 
               <!-- Heading -->
               <h3 class="font-semibold
@@ -527,7 +537,7 @@
               </p>
 
               <!-- Review Card -->
-              <div class="mt-10 bg-white shadow-lg rounded-2xl p-6">
+              <div class="mt-10 bg-white shadow-lg rounded-2xl p-6" >
 
                 <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
 
@@ -571,7 +581,7 @@
             </div>
 
             <!-- RIGHT SIDE IMAGE -->
-            <div class="flex justify-center lg:justify-end">
+            <div class="flex justify-center lg:justify-end" >
               <img src="./images/home/womenimg3.png" alt="review woman" class="w-full max-w-sm sm:max-w-md lg:max-w-lg">
             </div>
 
@@ -583,7 +593,7 @@
 
       <!-- ---------------------- details section--------------- -->
       <section class="details py-20">
-        <div class="container mx-auto">
+        <div class="container mx-auto" data-aos="fade-down" data-aos-duration="2000">
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="first_card">
               <figure class="flex justify-center  mt-3">

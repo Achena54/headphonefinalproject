@@ -13,22 +13,38 @@ menuBtn.addEventListener("click", () => {
 
 
 
-new Swiper(".headphoneSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
+
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
-    1024: {
-      slidesPerView: 4,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-  },
-});
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+      1280: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
+
 
 $(function () {
   $('#usercheck').hide();
